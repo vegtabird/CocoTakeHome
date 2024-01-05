@@ -1,0 +1,107 @@
+.pollModal{
+    width: 100%;
+    height: 100vh;
+    background-color: #EDEFEE;
+    .container{
+        padding: 16px;
+        .label{
+            color:#2D2E2D;
+            font-size: 14px;
+            line-height: 20px;
+            height:20px;
+            display: block;
+        }
+        .input{
+            background-color: #fff;
+            word-wrap: break-word;
+            word-break: break-all;
+            width:100%;
+            white-space: pre-wrap;
+            border:none;
+            height:48px;
+            line-height: 48px;
+            color:#2D2E2D;
+            font-size: 16px;
+            vertical-align: middle;
+            &::placeholder{
+                color: #8D938F
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        .question{
+            .questionLable{
+                font-size: 14px;
+                color:#717773;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .input{
+                margin-top: 8px;
+                padding:8px 16px;
+                border-radius: 8px;
+            }
+        }
+        .options{
+            margin-top: 16px;
+            .optionsList{
+                margin-top:8px;
+                border-radius: 8px;
+                background-color: #fff;
+                .optionItem{
+                    background-color: #fff;
+                    padding: 0px 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &:first-child{
+                        border-radius: 8px;
+                    }
+                    .input{
+                        padding: 8px 0px;
+                        border-radius: unset;
+                        flex-grow: 1;
+                    }
+                    .vector{
+                        max-height:24px;
+                        max-width: 24px;
+                        flex-grow: 0;
+                    }
+                }
+                .addButton{
+                    margin: 0px 16px;
+                    height:48px;
+                    line-height: 48px;
+                    color: #8D938F;
+                    font-size: 14px;
+                    border-top: 1px solid #E4E7E5;
+                }
+                .separator{
+                    height:1px;
+                    width:100%;
+                    margin: 0px 16px;
+                    background-color: #E4E7E5;
+                }
+            }
+            .optionHint{
+                color: #717773;
+                font-size: 12px;
+                font-weight: 400;
+                margin-top:8px;
+            }
+        }
+        .switch{
+            margin-top: 16px;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 8px;
+            font-weight: 400;
+            
+            font-size: 16px;
+        }
+    }
+}

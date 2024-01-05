@@ -1,0 +1,35 @@
+.pollModal{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    .container{
+        border-top:1px solid #E4E7E5;
+        padding: 24px 16px;
+        .question{
+            font-size: 18px;
+            font-weight: 700;
+            color: #2D2E2D; 
+        }
+        .optionsItem{
+            display: flex;
+            justify-content: space-between;
+            height:48px;
+            align-items: center;
+            margin-top: 16px;
+            .itemText{
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .vote{
+                font-weight: 700;
+                font-size: 14px;
+                color:#717773;
+                display: flex;
+                align-items: center;
+            }
+            .img{
+                margin-left:3px
+            }
+        }
+    }
+}

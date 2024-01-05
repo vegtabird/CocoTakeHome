@@ -1,0 +1,25 @@
+.toggle{
+    width: 44px;
+    height: 26px;
+    border-radius: 100px;
+    background-color: #8D938F;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .track{
+        height:20px;
+        width:20px;
+        background-color:#fff;
+        border-radius: 23px;
+    }
+    &.on{
+        justify-content: flex-end;
+        .track{
+            left: unset;
+            right: 0px;
+            background-color:#fff;
+        }
+    }
+
+}
