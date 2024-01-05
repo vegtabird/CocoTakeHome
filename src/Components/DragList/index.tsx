@@ -76,10 +76,10 @@ function Item({ children, className, index, listLength, onItemMove }: ItemProps)
       startY = touch.clientY;
     };
     el!.addEventListener('touchstart', touchDown);
-    return ()=>{
-        document.removeEventListener('touchend', touchDown);
-        document.removeEventListener('touchmove', touchMove)
-    }
+    return () => {
+      document.removeEventListener('touchend', touchDown);
+      document.removeEventListener('touchmove', touchMove);
+    };
   }, []);
   return (
     <>
